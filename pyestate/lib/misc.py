@@ -24,6 +24,10 @@ def tryit(howmany, func, *argv, **kwarg):
         howmany 是尝试次数
         func 是你所要尝试的函数
         *argv, **kwarg 是func中的参数
+        
+    func函数一定要有如下特点：
+        如果能正常运行，说明一定其中没有异常。
+        如果有异常，一定要抛出异常，打断函数
     """
     flag = 1
     while flag <= howmany:
